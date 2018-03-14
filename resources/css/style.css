@@ -275,7 +275,7 @@ header p {
 }
 
 .section-portfolios h2 {
-  color: #00ADB5;
+  color: rgb(0, 173, 181);
   margin-bottom: 2rem;
 }
 
@@ -358,9 +358,10 @@ header p {
 .contact-info {
   position: absolute;
   left: 50%;
+  right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.6);
   z-index: 10;
   height: 400px;
 }
