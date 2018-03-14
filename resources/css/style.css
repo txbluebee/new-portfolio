@@ -267,3 +267,100 @@ header p {
   margin-bottom: 0;
   text-align: center;
 }
+
+/* Education */
+
+.section-portfolios {
+  background-color: #eee;
+}
+
+.section-portfolios h2 {
+  color: #00ADB5;
+  margin-bottom: 2rem;
+}
+
+.portfolio-btn {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-btn a {
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
+
+.portfolio-btn .btn {
+  border-width: 2px;
+}
+
+/* Portfolios */
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  overflow: hidden;
+  transition: background-color 0.5s;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+  margin-top: 1rem;
+}
+
+.card:hover {
+  opacity: 1;
+} 
+
+.card-img-top {
+  transform: scale(1.07);
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.card-link:link,
+.card-link:visited {
+  color: inherit;
+}
+
+.card-img-top:hover {
+  transform: scale(1)
+} 
+
+.section-portfolios .card .card-body {
+  padding: 0.2rem 0.5rem;
+}
+
+.card-body .h6 {
+  color: #00ADB5;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.card-body span {
+  font-size: 0.7rem;
+  padding: 0;
+  font-style: italic;
+}
+
+/* Maps & contact */
+
+.map-box {
+  height: 400px;
+  width: 100%;
+  position: relative;  
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.contact-info {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 10;
+  height: 400px;
+}
