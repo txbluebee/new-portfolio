@@ -214,10 +214,6 @@ header p {
   z-index: 10;
 }
 
-/* .work-time {
-  margin-top: 30px;
-} */
-
 .work-time {
   background-color: #393E46;
   width: auto;
@@ -236,7 +232,7 @@ header p {
 
 .work-box {
   background-color: #eee;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .work-box span {
@@ -344,6 +340,7 @@ header p {
 /* Maps & contact */
 
 .map-box {
+  margin: 0;
   height: 400px;
   width: 100%;
   position: relative;  
@@ -357,13 +354,12 @@ header p {
 
 .contact-info {
   position: absolute;
-  left: 50%;
+  height: 400px;
+  width:50%;
   right: 0;
   top: 0;
-  bottom: 0;
   background-color: rgba(0,0,0,0.6);
   z-index: 10;
-  height: 400px;
 }
 
 .contact-info h3{

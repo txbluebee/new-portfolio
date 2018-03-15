@@ -101,7 +101,7 @@ const projectAll = document.querySelector('.projects');
 
 function displayProject(project){
     return `
-    <div class="col-12 col-md-6 col-lg-3">
+    <div class="col-12 col-sm-6 col-lg-3">
       <a href=${project.link} class="card-link" target="_blank">
         <div class="card">
           <img class="card-img-top" src=${project.imgUrl} alt="Card image cap">
