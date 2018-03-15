@@ -14,7 +14,7 @@ const projects = [
         id: 1,
         title: "Clean up Seattle",
         category: "All, Angular",
-        imgUrl: './resources/img/cleanupseattle.png',
+        imgUrl: './resources/img/cleanseattle.png',
         link: 'https://clean-up-seattle.firebaseapp.com/', 
         content: " Angular Js, Google Map api"
 
