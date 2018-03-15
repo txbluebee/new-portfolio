@@ -84,7 +84,6 @@
   /* maps */
   .contact-info h3{
     font-size: 1.4rem;
-
   }
 
 }
@@ -148,9 +147,9 @@
 
 
 
-  .map {
+  /* .map {
     display: none;
-  }
+  } */
 
   .contact-info {
     position: relative;

@@ -1,4 +1,4 @@
-// import seattleImg from '../img/cleanupseattle.png';
+// import seattleImg from '../img/cleanseattle.png';
 // import studyImg from '../img/studybuddy.png';
 // import questionImg from '../img/question.png';
 // import foodplanner from '../img/foodplanner.png';
