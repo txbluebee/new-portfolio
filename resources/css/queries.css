@@ -30,6 +30,32 @@
     font-size: 0.8rem;
   }
 
+  /* MOBILE NAV */
+
+  nav {
+    background-color:rgba(0, 173, 181,0.9);
+    color: #eee;
+  }
+
+  .js--main-nav {
+    display: none;
+  }
+
+  .nav {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }  
+
+  .nav-link:hover,
+  .nav-link:active {
+    transform: none;
+    color: #eee;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
   /* profile */
   .profile-text img {
     width: 200px;

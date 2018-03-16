@@ -107,7 +107,7 @@ function displayProject(project){
           <img class="card-img-top" src=${project.imgUrl} alt="Card image cap">
           <div class="card-body">
             <div class="h6">${project.title}</div>
-            <span>${project.content}</span>
+            <span class="text-truncate">${project.content}</span>
           </div>
         </div>
       </a>

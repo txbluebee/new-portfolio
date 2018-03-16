@@ -1,4 +1,32 @@
-$(document).ready(function (){
+$(document).ready(function () {
+  //sticky navbar
+  $('.js--section-sticky').waypoint(function (direction) {
+    if (direction === "down") {
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  }, {
+      // hit 60px from top of window
+      offset: '40px'
+    })
+
+  // mobile nav
+  $('.js--nav-icon').click(function () {
+    // toggle mobile nav
+    var nav = $('.js--main-nav');
+    nav.slideToggle(200);
+    // switch icons when click
+    var icon = $('.js--nav-icon i');
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+  });
+
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -37,25 +65,25 @@ $(document).ready(function (){
     });
 
   // Animations on scroll
-  $('.js--wp-1').waypoint(function(){
+  $('.js--wp-1').waypoint(function () {
     $('.js--wp-1').addClass('animated fadeIn');
-  }, 
-  {
-    offset: '50%'
-  });
+  },
+    {
+      offset: '50%'
+    });
 
-  $('.js--wp-2').waypoint(function(){
+  $('.js--wp-2').waypoint(function () {
     $('.js--wp-2').addClass('animated fadeIn');
-  }, 
-  {
-    offset: '60%'
-  }) 
+  },
+    {
+      offset: '60%'
+    })
 
-  
-  $('.js--wp-3').waypoint(function(){
+
+  $('.js--wp-3').waypoint(function () {
     $('.js--wp-3').addClass('animated fadeIn');
-  }, 
-  {
-    offset: '80%'
-  }) 
+  },
+    {
+      offset: '80%'
+    })
 })
