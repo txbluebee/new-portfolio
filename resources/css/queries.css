@@ -87,7 +87,8 @@
   }
 
   .card-img-top {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   } 
 
 
