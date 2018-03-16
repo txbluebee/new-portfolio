@@ -73,6 +73,7 @@
   .section-portfolios .card-body .h6 {
     font-size: 0.9rem;
   }
+
   .portfolio-btn a{
     font-size: 0.7rem;
   }
@@ -80,6 +81,15 @@
   .portfolio-btn .btn {
     border-width: 1px;
   }
+
+  .card {
+    opacity: 1;
+  }
+
+  .card-img-top {
+    transform: none;
+  } 
+
 
   /* maps */
   .contact-info h3{
