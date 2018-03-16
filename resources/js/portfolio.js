@@ -115,46 +115,26 @@ function displayProject(project){
     `
 }
 
-function defaultProjects(){
+function displayProjects(projects){
     let defaultProjects = "";
     projects.forEach(project =>{
-        // if (parseInt(project.id)<5){
-            defaultProjects += displayProject(project);
-    
-        
+        defaultProjects += displayProject(project);
     })
     projectAll.innerHTML = defaultProjects;
 }
 
-defaultProjects();
-
-const defaultLink = document.querySelector('.card-link');
-
-defaultLink.addEventListener('click', showDefaultProjects);
-
-function showDefaultProjects(e){
-    e.preventDefault();
-    let defaultProjects = "";
-    projects.forEach(project =>{
-        if (parseInt(project.id)<5){
-            defaultProjects += displayProject(project);
-    
-        } 
-    })
-    projectAll.innerHTML = defaultProjects;
-}
-
-// show projects by clicked link
+displayProjects(projects);
 
 const portfolioBtn = document.querySelector('.portfolio-btn');
+const portfolioMenu = document.querySelector('.custom-select');
 
 portfolioBtn.addEventListener('click', displayClickProject);
+portfolioMenu.addEventListener('change',displaySelectProject);
 
 function displayClickProject(e){
     e.preventDefault();
     if (e.target.nodeName !== "A"){return};
     const clickValue = e.target.innerText;
-    console.log(clickValue);
     let projectString = "";
     projects.forEach(project =>{
         if (project.category.includes(clickValue)){
@@ -164,4 +144,13 @@ function displayClickProject(e){
     projectAll.innerHTML = projectString;
 }
 
+function displaySelectProject(){
+    let projectString = "";
+    projects.forEach(project =>{
+        if (project.category.includes(this.value)){
+            projectString += displayProject(project);
+        } 
+    })
+    projectAll.innerHTML = projectString;
+}
 

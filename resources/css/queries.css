@@ -2,6 +2,7 @@
 @media (max-width: 991.98px) { 
   header {
     height: 60vh;
+    background-attachment: unset;
   }
 }
 
@@ -125,7 +126,13 @@
 
 }
 
+/* iphone 7 */
+
 @media (max-width: 575.98px) { 
+  *:focus {
+    outline:none;
+  }
+
   html {
     font-size: 16px;
   }
@@ -176,6 +183,25 @@
   
   
   /* Portfolios */
+
+  .portfolio-btn {
+    display: none;
+  }
+
+  .select-portfolio {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .custom-select {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 1px solid #00ADB5;
+    letter-spacing: 1px;
+  }
+
 
   .projects .card {
     width: 80%;
