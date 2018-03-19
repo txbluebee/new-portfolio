@@ -64,8 +64,8 @@ const projects = [
         title: "BMI Calculator",
         category: 'All, JavaScript',
         imgUrl: './resources/img/bmi.png',
-        link: 'https://txbluebee.github.io/bmi-calculator/', 
-        content: "Vanilla JavaScript"
+        link: 'https://txbluebee.github.io/bmi-calculator-firebase/', 
+        content: "JavaScript, Firebase"
     },
     {
         id: 8,
