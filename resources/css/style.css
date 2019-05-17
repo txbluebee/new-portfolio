@@ -355,6 +355,7 @@ nav {
 
 /* Portfolios */
 
+
 .card {
   border-radius: 10px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
@@ -376,7 +377,7 @@ nav {
 .card-img-top {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
-  height: 100%;
+  height: 120px;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
